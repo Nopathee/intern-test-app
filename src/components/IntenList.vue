@@ -17,7 +17,7 @@ const submitForm = async () => {
 
     const internData = { ...intern.value,welcomeEmail: welcomeEmail.value };
 
-    const response = await axios.post('http://localhost:3000/api/intern/submit', internData);
+    const response = await axios.post('https://intern-test-app-be-production.up.railway.app/api/intern/submit', internData);
     alert(response.data);
   } catch (error) {
     console.error('Error submitting form:', error);
